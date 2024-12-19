@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Example</title>
+  <link rel="stylesheet" href="{% static 'css/output.css' %}">
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  <!-- Header -->
+  <header class="bg-blue-600 text-white">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Teemu Hynnä</h1>
+      <nav>
+        <a href="#" class="text-white hover:text-gray-200 px-3">Home</a>
+        <a href="#" class="text-white hover:text-gray-200 px-3">About</a>
+        <a href="#" class="text-white hover:text-gray-200 px-3">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-100 py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-extrabold text-blue-700">Welcome to Our Website</h2>
+      <p class="mt-4 text-lg text-gray-700">Discover amazing content with a touch of simplicity.</p>
+      <button class="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">
+        Get Started
+      </button>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="py-12">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-2xl font-bold text-blue-600">Card Title 1</h3>
+        <p class="mt-2 text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia.</p>
+        <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+          Learn More
+        </button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-2xl font-bold text-blue-600">Card Title 2</h3>
+        <p class="mt-2 text-gray-700">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+          Learn More
+        </button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-2xl font-bold text-blue-600">Card Title 3</h3>
+        <p class="mt-2 text-gray-700">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+        <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white">
+    <div class="container mx-auto px-6 py-4 text-center">
+      <p class="text-sm">&copy; 2024 My Tailwind Page. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+

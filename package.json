@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.17",
+    "webpack-bundle-tracker": "^3.1.1"
+  },
+  "dependencies": {
+    "D": "^1.0.0"
+  }
+}
