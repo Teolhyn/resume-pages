@@ -7,7 +7,7 @@ function timelineRightContainer(title: String, content: String) {
 
   return (
     <div className="pt-3 pl-12 relative w-1/2 left-1/2 bg-inherit after:content-[''] after:absolute after:w-6 after:h-6 after:bg-white after:border-black after:top-4 after:rounded-full after:z-1 after:left-[-8px]">
-      <div className="pt-5 pr-8 pl-2 pb-2 bg-white relative rounded-md">
+      <div className="pt-5 pr-8 pl-2 pb-2 outline outline-white outline-1 text-white relative rounded-md">
         <h2 className="text-lg mb-2">{title}</h2>
         <p>{content}</p>
       </div>
@@ -22,7 +22,7 @@ function timelineLeftContainer(title: String, content: String) {
 
   return (
     <div className="pt-3 pr-10 relative w-1/2 left-0 bg-inherit after:content-[''] after:absolute after:w-6 after:h-6 after:right-[-16px] after:bg-white after:border-black after:top-4 after:rounded-full after:z-1">
-      <div className="pt-5 pr-8 pl-2 pb-2 bg-white relative rounded-md">
+      <div className="pt-5 pr-8 pl-2 pb-2 outline outline-1 outline-white relative rounded-md text-white">
         <h2 className="text-lg mb-2">{title}</h2>
         <p>{content}</p>
       </div>
@@ -61,7 +61,7 @@ export default function Experience() {
   };
 
   return (
-    <div className="pt-12 pb-44">
+    <div className="pt-12 pb-44 tracking-tighter">
       <p className='text-4xl mb-10 font-bold text-white max-w-4xl mx-auto font-custom'>Experience & Education</p>
       <div className="flex flex-col items-center justify-center h-screen font-custom">
         <div className="flex space-x-4 mb-4 outline outline-1 outline-white p-2 rounded-full">
