@@ -7,10 +7,10 @@ export default function Header() {
     <div className="App sticky top-0 backdrop-blur-lg z-10 flex justify-between items-center w-full font-custom tracking-tighter">
       <header className="App-header absolute left-1/2 transform -translate-x-1/2">
         <div className="outline outline-1 rounded-full center m-5 py-5 px-8 flex justify-between text-sm w-96">
-          <a href="/" className="bg-clip-text text-white text-center select-auto transition-colors duration-300 hover:bg-gradient-to-r hover:from-teal-300 hover:via-blue-300 hover:to-pink-300 hover:text-opacity-50">Home</a>
-          <a href="/about" className="bg-clip-text text-white text-center select-auto transition-colors duration-300 hover:bg-gradient-to-r hover:from-teal-300 hover:via-blue-300 hover:to-pink-300 hover:text-opacity-50">About</a>
-          <a href="/projects" className="bg-clip-text text-white text-center select-auto transition-colors duration-300 hover:bg-gradient-to-r hover:from-teal-300 hover:via-blue-300 hover:to-pink-300 hover:text-opacity-50">Projects</a>
-          <a href="/contact" className="bg-clip-text text-white text-center select-auto transition-colors duration-300 hover:bg-gradient-to-r hover:from-teal-300 hover:via-blue-300 hover:to-pink-300 hover:text-opacity-50">Contact</a>
+          <a href="/resume-pages/" className="bg-clip-text text-white text-center select-auto transition-colors duration-300 hover:bg-gradient-to-r hover:from-teal-300 hover:via-blue-300 hover:to-pink-300 hover:text-opacity-50">Home</a>
+          <a href="/resume-pages/about" className="bg-clip-text text-white text-center select-auto transition-colors duration-300 hover:bg-gradient-to-r hover:from-teal-300 hover:via-blue-300 hover:to-pink-300 hover:text-opacity-50">About</a>
+          <a href="/resume-pages/projects" className="bg-clip-text text-white text-center select-auto transition-colors duration-300 hover:bg-gradient-to-r hover:from-teal-300 hover:via-blue-300 hover:to-pink-300 hover:text-opacity-50">Projects</a>
+          <a href="/resume-pages/contact" className="bg-clip-text text-white text-center select-auto transition-colors duration-300 hover:bg-gradient-to-r hover:from-teal-300 hover:via-blue-300 hover:to-pink-300 hover:text-opacity-50">Contact</a>
         </div>
       </header>
       <div className="flex ml-auto text-white mt-5 mb-5 px-14">

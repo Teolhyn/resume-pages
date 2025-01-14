@@ -6,7 +6,7 @@ const Projects = () => {
         <div className="flex justify-between w-[896px] h-96 mb-5">
           <a href="https://laina-de.fi" target="_blank" rel="noopener noreferrer">
             <div className="bg-[#313640] outline outline-white outline-1 h-96 rounded-lg w-[400px] transition-all duration-300 hover:scale-105">
-              <img src="laina-de.fi_.png" alt="laina defi website preview" className="size-48 rounded-t-lg w-[400px]" />
+              <img src="./laina-de.fi_.png" alt="laina defi website preview" className="size-48 rounded-t-lg w-[400px]" />
               <div className="p-2">
                 <h1 className="font-bold text-2xl">Laina</h1>
                 <p>
@@ -19,7 +19,7 @@ const Projects = () => {
           </a>
           <a href="/">
             <div className="bg-[#313640] outline outline-white outline-1 h-96 rounded-lg w-[400px] transition-all duration-300 hover:scale-105">
-              <img src="portfolio.png" alt="Portfolio website preview" className="size-48 rounded-t-lg w-[400px]" />
+              <img src="./portfolio.png" alt="Portfolio website preview" className="size-48 rounded-t-lg w-[400px]" />
               <div className="p-2">
                 <h1 className="font-bold text-2xl">Resume site</h1>
                 <p>Well. You are already here. This site was built using React and Django.</p>
