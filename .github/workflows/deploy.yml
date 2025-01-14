@@ -18,9 +18,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          yarn install
           cd frontend
-          yarn install
+          npm install
 
       - name: Build the project
         run: |
