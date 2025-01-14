@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
-    <div className="h-screen flex flex-row items-center justify-center">
-      <div className="flex px-8">
+    <div className="h-screen flex flex-row items-center justify-center tracking-tighter">
+      <div className="flex px-8 drop-shadow-lg">
         <img src='/img2.jpeg' alt='Teemu Hynnä' className="flex items-start justify-center mx-auto w-56 rounded-md mb-5" />
       </div>
       <div>

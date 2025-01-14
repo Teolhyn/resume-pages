@@ -1,20 +1,45 @@
 import './index.css';
 import Header from "./components/header";
-import Technologies from "./components/technologies";
-import Hero from "./components/hero";
-import Experience from "./components/experience"
 import Footer from './components/footer';
 
-function App() {
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+
+import React from 'react';
+import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
+
+const PageWrapper = () => {
   return (
-    <div className="App">
-      <Header></Header>
-      <Hero></Hero>
-      <Technologies></Technologies>
-      <Experience></Experience>
-      <Footer></Footer>
+    <div>
+      <Header />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
     </div>
   );
-}
+};
+
+const router = createBrowserRouter([
+  {
+    element: <PageWrapper />,
+    children: [
+      { path: '', element: <Home /> },
+      { path: 'about', element: <About /> },
+      { path: 'contact', element: <Contact /> },
+      { path: 'projects', element: <Projects /> },
+    ],
+  },
+]);
+
+const App = () => {
+  return (
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  );
+};
 
 export default App;
