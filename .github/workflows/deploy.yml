@@ -15,6 +15,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          yarn install
           cd frontend
           yarn install
 
