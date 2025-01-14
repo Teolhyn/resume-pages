@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div className="font-custom text-white h-screen max-w-4xl mx-auto py-10 flex">
-      <img src="img2.jpeg" className="size-64 mx-5" />
+      <img src="img2.jpeg" alt="Teemu Hynnä" className="size-64 mx-5" />
       <div>
         <h1 className="text-4xl font-bold mb-5">About me</h1>
         <p className="text-lg tracking-tighter">

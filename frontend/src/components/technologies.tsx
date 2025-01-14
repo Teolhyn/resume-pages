@@ -7,7 +7,7 @@ export default function Technologies() {
         <p className='text-4xl mb-10 font-bold'>Technologies</p>
         <div className="App flex justify-between text-white">
           <div className='w-72'>
-            <a href='https://www.rust-lang.org/' target="_blank">
+            <a href='https://www.rust-lang.org/' target="_blank" rel="noopener noreferrer">
               <div className="outline outline-1 rounded-md flex p-2 mb-5 bg-[#313640] transition-all duration-100 hover:opacity-90 hover:drop-shadow-lg">
                 <RustOriginal size="52" className="mr-2 bg-gray-400 p-1 rounded-md" />
                 <div className='flex flex-col justify-center'>
@@ -16,7 +16,7 @@ export default function Technologies() {
                 </div>
               </div>
             </a>
-            <a href='https://www.python.org/' target="_blank">
+            <a href='https://www.python.org/' target="_blank" rel="noopener noreferrer">
               <div className="outline outline-1 rounded-md flex p-2 mb-5 bg-[#313640] transition-all duration-100 hover:opacity-90 hover:drop-shadow-lg">
                 <PythonOriginal size="52" className="mr-2 bg-blue-300 p-1 rounded-md" />
                 <div className='flex flex-col justify-center'>
@@ -25,7 +25,7 @@ export default function Technologies() {
                 </div>
               </div>
             </a>
-            <a href='https://github.com/features/actions' target="_blank">
+            <a href='https://github.com/features/actions' target="_blank" rel="noopener noreferrer">
               <div className="outline outline-1 rounded-md flex p-2 mb-5 bg-[#313640] transition-all duration-100 hover:opacity-90 hover:drop-shadow-lg">
                 <GithubactionsOriginal size="52" className="mr-2 bg-blue-300 p-1 rounded-md" />
                 <div className='flex flex-col justify-center'>
@@ -36,7 +36,7 @@ export default function Technologies() {
             </a>
           </div>
           <div className='w-72'>
-            <a href='https://www.typescriptlang.org/' target="_blank">
+            <a href='https://www.typescriptlang.org/' target="_blank" rel="noopener noreferrer">
               <div className="outline outline-1 rounded-md flex p-2 mb-5 bg-[#313640] transition-all duration-100 hover:opacity-90 hover:drop-shadow-lg">
                 <TypescriptOriginal size="52" className="mr-2 bg-blue-300 p-1 rounded-md" />
                 <div className='flex flex-col justify-center'>
@@ -45,7 +45,7 @@ export default function Technologies() {
                 </div>
               </div>
             </a>
-            <a href='https://tailwindcss.com/' target="_blank">
+            <a href='https://tailwindcss.com/' target="_blank" rel="noopener noreferrer">
               <div className="outline outline-1 rounded-md flex p-2 mb-5 bg-[#313640] transition-all duration-100 hover:opacity-90 hover:drop-shadow-lg">
                 <TailwindcssOriginal size="52" className="mr-2 bg-teal-200 p-1 rounded-md" />
                 <div className='flex flex-col justify-center'>
@@ -54,7 +54,7 @@ export default function Technologies() {
                 </div>
               </div>
             </a>
-            <a href='https://git-scm.com/' target="_blank">
+            <a href='https://git-scm.com/' target="_blank" rel="noopener noreferrer">
               <div className="outline outline-1 rounded-md flex p-2 mb-5 bg-[#313640] transition-all duration-100 hover:opacity-90 hover:drop-shadow-lg">
                 <GitOriginal size="52" className="mr-2 bg-orange-300 p-1 rounded-md" />
                 <div className='flex flex-col justify-center'>
@@ -65,7 +65,7 @@ export default function Technologies() {
             </a>
           </div>
           <div className='w-72'>
-            <a href='https://nodejs.org/en' target="_blank">
+            <a href='https://nodejs.org/en' target="_blank" rel="noopener noreferrer">
               <div className="outline outline-1 rounded-md flex p-2 mb-5 bg-[#313640] transition-all duration-100 hover:opacity-90 hover:drop-shadow-lg">
                 <NodejsOriginal size="52" className="mr-2 bg-green-300 p-1 rounded-md" />
                 <div className='flex flex-col justify-center'>
@@ -74,7 +74,7 @@ export default function Technologies() {
                 </div>
               </div>
             </a>
-            <a href='https://react.dev/' target="_blank">
+            <a href='https://react.dev/' target="_blank" rel="noopener noreferrer">
               <div className="outline outline-1 rounded-md flex p-2 mb-5 bg-[#313640] transition-all duration-100 hover:opacity-90 hover:drop-shadow-lg">
                 <ReactOriginal size="52" className="mr-2 bg-blue-600 p-1 rounded-md" />
                 <div className='flex flex-col justify-center'>
@@ -83,7 +83,7 @@ export default function Technologies() {
                 </div>
               </div>
             </a>
-            <a href='https://astro.build/' target="_blank">
+            <a href='https://astro.build/' target="_blank" rel="noopener noreferrer">
               <div className="outline outline-1 rounded-md flex p-2 mb-5 bg-[#313640] transition-all duration-100 hover:opacity-90 hover:drop-shadow-lg">
                 <AstroOriginal size="52" className="mr-2 bg-orange-300 p-1 rounded-md" />
                 <div className='flex flex-col justify-center'>
