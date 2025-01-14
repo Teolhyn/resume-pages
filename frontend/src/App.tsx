@@ -7,8 +7,8 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 
-import React from 'react';
-import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Outlet, RouterProvider, createBrowserRouter, useNavigate } from 'react-router-dom';
 
 const PageWrapper = () => {
   return (
@@ -37,6 +37,16 @@ const router = createBrowserRouter([
 });
 
 const App = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const redirectPath = params.get('redirect');
+    if (redirectPath) {
+      navigate(redirectPath);
+    }
+  }, [navigate])
+
   return (
     <React.StrictMode>
       <RouterProvider router={router} />
