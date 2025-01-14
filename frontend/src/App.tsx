@@ -27,9 +27,9 @@ const router = createBrowserRouter([
     element: <PageWrapper />,
     children: [
       { path: '', element: <Home /> },
-      { path: 'about', element: <About /> },
-      { path: 'contact', element: <Contact /> },
-      { path: 'projects', element: <Projects /> },
+      { path: 'resume-pages/about', element: <About /> },
+      { path: 'resume-pages/contact', element: <Contact /> },
+      { path: 'resume-pages/projects', element: <Projects /> },
     ],
   },
 ], {
