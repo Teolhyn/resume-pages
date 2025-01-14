@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd frontend
-          npm install
+          yarn install
 
       - name: Build the project
         run: |
