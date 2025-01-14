@@ -1,4 +1,4 @@
-import '@/index.css';
+import './index.css';
 import Header from "./components/header";
 import Footer from './components/footer';
 
@@ -7,8 +7,8 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 
-import React from 'react';
-import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Outlet, RouterProvider, createBrowserRouter, useNavigate } from 'react-router-dom';
 
 const PageWrapper = () => {
   return (
@@ -33,10 +33,20 @@ const router = createBrowserRouter([
     ],
   },
 ], {
-  basename: '/',
+  basename: '/resume-pages',
 });
 
 const App = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const redirectPath = params.get('redirect');
+    if (redirectPath) {
+      navigate(redirectPath);
+    }
+  }, [navigate])
+
   return (
     <React.StrictMode>
       <RouterProvider router={router} />
