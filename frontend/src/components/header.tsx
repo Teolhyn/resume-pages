@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function Header() {
   return (
     <div className="App sticky top-0 backdrop-blur-lg z-10 flex justify-between items-center w-full font-custom tracking-tighter">
-      <header className="App-header absolute left-1/2 transform -translate-x-1/2 h-16">
+      <header className="App-header absolute left-1/2 transform -translate-x-1/2 h-16 min-h-16">
         <div className="outline outline-1 rounded-full center m-5 py-5 px-12 flex justify-between text-sm w-96">
           <Link to="/" className="bg-clip-text text-white text-center select-auto transition-opacity duration-100 hover:opacity-60">Home</Link>
           <Link to="/about" className="bg-clip-text text-white text-center select-auto transition-opacity duration-100 hover:opacity-60">About</Link>

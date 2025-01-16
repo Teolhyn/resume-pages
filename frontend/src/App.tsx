@@ -1,13 +1,13 @@
 import '@/index.css';
 import Header from "./components/header";
-import Footer from './components/footer';
 
-import About from './pages/About';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-
-import React from 'react';
+import React, { lazy } from 'react';
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
+
+const Home = lazy(() => import('./pages/Home'));
+const About = lazy(() => import('./pages/About'));
+const Projects = lazy(() => import('./pages/Projects'));
+const Footer = lazy(() => import('./components/footer'));
 
 const PageWrapper = () => {
   return (
