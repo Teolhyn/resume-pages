@@ -25,13 +25,13 @@ const router = createBrowserRouter([
   {
     element: <PageWrapper />,
     children: [
-      { path: '', element: <Home /> },
-      { path: 'about', element: <About /> },
-      { path: 'projects', element: <Projects /> },
+      { path: '/', element: <Home /> },
+      { path: '/about', element: <About /> },
+      { path: '/projects', element: <Projects /> },
     ],
   },
 ], {
-  basename: '/resume-pages/',
+  basename: '/resume-pages',
 });
 
 const App = () => {
