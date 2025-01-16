@@ -1,4 +1,12 @@
-import { PythonOriginal, RustOriginal, GithubactionsOriginal, TypescriptOriginal, TailwindcssOriginal, GitOriginal, NodejsOriginal, ReactOriginal, AstroOriginal } from 'devicons-react';
+import PythonOriginal from "devicons-react/lib/icons/PythonOriginal";
+import RustOriginal from 'devicons-react/lib/icons/RustOriginal';
+import GithubactionsOriginal from 'devicons-react/lib/icons/GithubactionsOriginal';
+import TypescriptOriginal from 'devicons-react/lib/icons/TypescriptOriginal';
+import TailwindcssOriginal from 'devicons-react/lib/icons/TailwindcssOriginal';
+import GitOriginal from 'devicons-react/lib/icons/GitOriginal';
+import NodejsOriginal from 'devicons-react/lib/icons/NodejsOriginal';
+import ReactOriginal from 'devicons-react/lib/icons/ReactOriginal';
+import AstroOriginal from 'devicons-react/lib/icons/AstroOriginal';
 
 export default function Technologies() {
   return (
