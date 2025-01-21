@@ -11,9 +11,9 @@ import AstroOriginal from 'devicons-react/lib/icons/AstroOriginal';
 export default function Technologies() {
   return (
     <div className='bg-[#23272e] py-12 tracking-tighter'>
-      <div className='text-white max-w-4xl mx-auto font-custom'>
+      <div className='text-white max-w-4xl md:mx-auto font-custom ml-10'>
         <p className='text-4xl mb-10 font-bold'>Technologies</p>
-        <div className="App flex justify-between text-white">
+        <div className="md:flex justify-between text-white">
           <div className='w-72'>
             <a href='https://www.rust-lang.org/' target="_blank" rel="noopener noreferrer">
               <div className="outline outline-1 rounded-md flex p-2 mb-5 bg-[#313640] transition-all duration-100 hover:opacity-90 hover:drop-shadow-lg">
