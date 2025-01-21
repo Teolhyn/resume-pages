@@ -1,9 +1,9 @@
 const Projects = () => {
   return (
     <div>
-      <h1 className="font-custom text-4xl font-bold tracking-tighter text-white max-w-4xl mx-auto py-10 flex">Project portfolio</h1>
-      <div className="font-custom tracking-tighter text-white flex flex-col justify-between items-center">
-        <div className="flex justify-between w-[896px] h-96 mb-5">
+      <h1 className="font-custom text-4xl font-bold tracking-tighter text-white max-w-4xl mx-10 lg:mx-auto py-10 flex">Project portfolio</h1>
+      <div className="font-custom tracking-tighter text-white lg:flex flex-col justify-between items-center h-screen">
+        <div className="lg:flex justify-between w-[896px] h-96 mb-5 mx-10">
           <a href="https://laina-de.fi" target="_blank" rel="noopener noreferrer">
             <div className="bg-[#313640] outline outline-white outline-1 h-96 rounded-lg w-[400px] transition-all duration-300 hover:scale-105">
               <img src="./laina-de.fi_.png" alt="laina defi website preview" className="size-48 rounded-t-lg w-[400px]" />
@@ -18,7 +18,7 @@ const Projects = () => {
             </div>
           </a>
           <a href="/">
-            <div className="bg-[#313640] outline outline-white outline-1 h-96 rounded-lg w-[400px] transition-all duration-300 hover:scale-105">
+            <div className="mt-10 lg:mt-0 bg-[#313640] outline outline-white outline-1 h-96 rounded-lg w-[400px] transition-colors duration-300 hover:scale-105">
               <img src="./portfolio.png" alt="Portfolio website preview" className="size-48 rounded-t-lg w-[400px]" />
               <div className="p-2">
                 <h1 className="font-bold text-2xl">Resume site</h1>
