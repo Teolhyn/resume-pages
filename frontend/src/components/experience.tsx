@@ -62,8 +62,8 @@ export default function Experience() {
 
   return (
     <div className="pt-12 pb-44 tracking-tighter">
-      <p className='text-4xl mb-10 font-bold text-white max-w-4xl mx-auto font-custom'>Experience & Education</p>
-      <div className="flex flex-col items-center justify-center h-screen font-custom">
+      <p className='text-4xl mb-10 font-bold text-white max-w-4xl mx-10 lg:mx-auto font-custom'>Experience & Education</p>
+      <div className="flex flex-col items-center lg:justify-center lg:mt-20 lg:h-screen font-custom">
         <div className="flex space-x-4 mb-4 outline outline-1 outline-white p-2 rounded-full">
           <button
             onClick={() => toggleMode('work')}
@@ -81,10 +81,46 @@ export default function Experience() {
           </button>
         </div>
         <div
-          className={`h-screen rounded-lg`}
+          className={`h-screen rounded-lg hidden lg:flex`}
         >
           {isWork ? (workTimeline()) : (educationTimeline())}
         </div>
+      </div>
+      <div className="flex flex-col mx-10 items-center lg:hidden">
+        {isWork ? (
+          <div>
+            <div className="pt-5 pr-8 pl-2 pb-2 my-3 outline outline-1 outline-white rounded-md text-white">
+              <h2 className="text-lg mb-2">6/2024 - Present | Founder & Developer | Laina</h2>
+              <p>Designed and developed a smart contracts based decentralized lending & borrowing platform on the Stellar blockchain.</p>
+            </div>
+            <div className="pt-5 pr-8 pl-2 pb-2 my-3 outline outline-1 outline-white rounded-md text-white">
+              <h2 className="text-lg mb-2">11/2023 - Present | Data Management Expert & Research Coordinator | University of Turku</h2>
+              <p>Deployed a research data storage. Gave training on data management and FAIR principles. Coordinated the largest solar energy research project in Finland. Build models for solar energy production approximation using Python.</p>
+            </div>
+            <div className="pt-5 pr-8 pl-2 pb-2 my-3 outline outline-1 outline-white rounded-md text-white">
+              <h2 className="text-lg mb-2">1/2023 - 11/2023 | Project Manager | Medicortex</h2>
+              <p>Kickstarted a new project. Ran a research team of two persons in the combined field of biotechnology and electromagnetism. Wrote multiple funding applications to Business Finland and U.S. Department of Defence.</p>
+            </div>
+            <div className="pt-5 pr-8 pl-2 pb-2 my-3 outline outline-1 outline-white rounded-md text-white">
+              <h2 className="text-lg mb-2">10/2022-1/2023 | Production Engineer | Revvity</h2>
+              <p>Helped in the development of medical-grade mass-spectrometer as a specialist. Developed ion path models using SIMION and Lua.</p>
+            </div>
+          </div>
+        ) : (
+          <div>
+            <div className="pt-5 pr-8 pl-2 pb-2 my-3 outline outline-1 outline-white rounded-md text-white">
+              <h2 className="text-lg mb-2">2023 | IPMA-D</h2>
+              <p>International Project Management Association certificate level D. Completed during my employment at Medicortex.</p>
+            </div>
+            <div className="pt-5 pr-8 pl-2 pb-2 my-3 outline outline-1 outline-white rounded-md text-white">
+              <h2 className="text-lg mb-2">2022 | MSc Physics</h2>
+              <p>Major in industrial and materials physics. Minors in mathematics, computer science, and business. My thesis studied physical spiking neural networks and it gave promising results on potential synapse materials that were able to recognize hand written digits.</p>
+            </div>
+            <div className="pt-5 pr-8 pl-2 pb-2 my-3 outline outline-1 outline-white rounded-md text-white">
+              <h2 className="text-lg mb-2">2020 | BSc Physics</h2>
+              <p>Wrote my thesis about phase-field simulations.</p>
+            </div>
+          </div>)}
       </div>
     </div>
   );
