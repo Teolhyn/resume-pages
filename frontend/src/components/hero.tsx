@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <div className="h-screen mt-40 lg:mt-0 lg:flex flex-row items-center justify-center tracking-tighter">
       <div className="flex px-8 drop-shadow-lg">
-        <img src='./img2.avif' alt='Teemu Hynnä' className="flex items-start justify-center mx-auto w-[224p] h-[224p] rounded-md mb-5" />
+        <img src='./img22.avif' alt='Teemu Hynnä' className="flex items-start justify-center mx-auto w-64 rounded-md mb-5" />
       </div>
       <div>
         <div className="flex w-full items-center justify-center text-7xl font-extrabold mx-auto text-white mb-5">

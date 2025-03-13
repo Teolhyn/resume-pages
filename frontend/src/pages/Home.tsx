@@ -8,7 +8,7 @@ function Home() {
     <div className="App">
       <Hero></Hero>
       <Technologies></Technologies>
-      <div className='w-4xl mx-auto'>
+      <div className='max-w-4xl mx-auto'>
         <Experience></Experience>
       </div>
     </div>
