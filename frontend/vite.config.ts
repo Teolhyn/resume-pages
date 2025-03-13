@@ -2,14 +2,17 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import viteCompression from 'vite-plugin-compression';
 import { visualizer } from 'rollup-plugin-visualizer';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   base: '/resume-pages/',
-  plugins: [react(),
-  viteCompression({
-    algorithm: 'gzip',
-  }),
-  visualizer({ open: true }),
+  plugins: [
+    react(),
+    tailwindcss(),
+    viteCompression({
+      algorithm: 'gzip',
+    }),
+    visualizer({ open: true }),
   ],
   optimizeDeps: {
     include: ['loadash', 'axios'],

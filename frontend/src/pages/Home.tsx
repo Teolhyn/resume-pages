@@ -8,7 +8,9 @@ function Home() {
     <div className="App">
       <Hero></Hero>
       <Technologies></Technologies>
-      <Experience></Experience>
+      <div className='w-4xl mx-auto'>
+        <Experience></Experience>
+      </div>
     </div>
   );
 }
