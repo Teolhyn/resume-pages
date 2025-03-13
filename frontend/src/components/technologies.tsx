@@ -11,7 +11,7 @@ import AstroOriginal from "devicons-react/lib/icons/AstroOriginal";
 function TechnologyCard({ icon: Icon, title, description, link, bg }: any) {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <div className="outline rounded-md flex p-2 backdrop-blur-md transition-all duration-100 hover:scale-105">
+      <div className="font-manrope outline rounded-md flex p-2 backdrop-blur-md transition-all duration-100 hover:scale-105">
         <Icon size="52" className={`mr-2 p-1 rounded-md ${bg}`} />
         <div className="flex flex-col justify-center">
           <p>{title}</p>
@@ -37,7 +37,7 @@ const technologies = [
 export default function Technologies() {
   return (
     <div className="py-12 tracking-tighter">
-      <div className="text-white max-w-4xl mx-auto font-custom bg-black/30 outline outline-white rounded-2xl p-10 drop-shadow-md backdrop-blur-xs">
+      <div className="text-white max-w-4xl mx-auto font-manrope bg-black/30 outline outline-white rounded-2xl p-10 drop-shadow-md backdrop-blur-xs">
         <p className="text-4xl mb-10 font-bold text-left">Technologies</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {technologies.map((tech, index) => (

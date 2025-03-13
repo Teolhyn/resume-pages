@@ -8,7 +8,7 @@ export default function Experience() {
   };
 
   return (
-    <div className="h-screen">
+    <div className="h-screen font-manrope">
       <div className="bg-black/30 outline outline-white rounded-2xl p-10 drop-shadow-md backdrop-blur-xs">
         <p className="text-4xl font-bold text-left">Experience</p>
         <div className="container my-4 flex justify-center items-center">

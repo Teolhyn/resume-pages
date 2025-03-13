@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div className="min-h-[calc(100vh-272px)]">
-      <div className="font-custom text-white max-w-4xl min-w-2xs mx-4 sm:mx-4 md:mx-auto p-10 md:flex justify-center drop-shadow-lg outline outline-white my-8 rounded-2xl backdrop-blur-xs bg-black/30">
+      <div className="font-manrope text-white max-w-4xl min-w-2xs mx-4 sm:mx-4 md:mx-auto p-10 md:flex justify-center drop-shadow-lg outline outline-white my-8 rounded-2xl backdrop-blur-xs bg-black/30">
         <img src="./img2.jpeg" alt="Teemu Hynnä" loading="lazy" className="size-64 mr-10 rounded-lg mt-1" />
         <div>
           <h1 className="text-4xl font-bold mb-1 mt-5 mx-10 md:mx-0 md:mt-0">About me</h1>
