@@ -1,127 +1,188 @@
 import { useState } from "react";
 
-function timelineRightContainer(title: String, content: String) {
-  if (!title || !content) {
-    throw new Error("Both 'title' and 'content' are required!");
-  }
-
-  return (
-    <div className="pt-3 pl-12 relative w-1/2 left-1/2 bg-inherit after:content-[''] after:absolute after:w-6 after:h-6 after:bg-white after:border-black after:top-4 after:rounded-full after:z-1 after:left-[-8px]">
-      <div className="pt-5 pr-8 pl-2 pb-2 outline outline-white outline-1 text-white relative rounded-md">
-        <h2 className="text-lg mb-2">{title}</h2>
-        <p>{content}</p>
-      </div>
-    </div>
-  )
-}
-
-function timelineLeftContainer(title: String, content: String) {
-  if (!title || !content) {
-    throw new Error("Both 'title' and 'content' are required!");
-  }
-
-  return (
-    <div className="pt-3 pr-10 relative w-1/2 left-0 bg-inherit after:content-[''] after:absolute after:w-6 after:h-6 after:right-[-16px] after:bg-white after:border-black after:top-4 after:rounded-full after:z-1">
-      <div className="pt-5 pr-8 pl-2 pb-2 outline outline-1 outline-white relative rounded-md text-white">
-        <h2 className="text-lg mb-2">{title}</h2>
-        <p>{content}</p>
-      </div>
-    </div>
-  )
-}
-
-function workTimeline() {
-  return (
-    <div className="relative max-w-[896px] min-w-[896px] m-0 after:absolute after:w-2 after:content-[''] after:bg-white after:top-0 after:bottom-0 after:left-1/2 after:ml-[-3] after:rounded-md">
-      {timelineRightContainer("6/2024 - Present | Founder & Developer | Laina", "Designed and developed a smart contracts based decentralized lending & borrowing platform on the Stellar blockchain.")}
-      {timelineLeftContainer("11/2023 - Present | Data Management Expert & Research Coordinator | University of Turku", "Deployed a research data storage. Gave training on data management and FAIR principles. Coordinated the largest solar energy research project in Finland. Build models for solar energy production approximation using Python.")}
-      {timelineRightContainer("1/2023 - 11/2023 | Project Manager | Medicortex", "Kickstarted a new project. Ran a research team of two persons in the combined field of biotechnology and electromagnetism. Wrote multiple funding applications to Business Finland and U.S. Department of Defence.")}
-      {timelineLeftContainer("10/2022-1/2023 | Production Engineer | Revvity", "Helped in the development of medical-grade mass-spectrometer as a specialist. Developed ion path models using SIMION and Lua.")}
-    </div>
-  )
-}
-
-function educationTimeline() {
-  return (
-    <div className="relative max-w-[896px] min-w-[896px] m-0 after:absolute after:w-2 after:content-[''] after:bg-white after:top-0 after:bottom-0 after:left-1/2 after:ml-[-3] after:rounded-md">
-      {timelineRightContainer("2023 | IPMA-D", "International Project Management Association certificate level D. Completed during my employment at Medicortex.")}
-      {timelineLeftContainer("2022 | MSc Physics", "Major in industrial and materials physics. Minors in mathematics, computer science, and business. My thesis studied physical spiking neural networks and it gave promising results on potential synapse materials that were able to recognize hand written digits.")}
-      {timelineRightContainer("2020 | BSc Physics", "Wrote my thesis about phase-field simulations.")}
-    </div>
-  )
-}
-
 export default function Experience() {
-  const [isWork, setIsWork] = useState(true);
+  const [isWork, setIsWork] = useState(true); // Toggle between 'work' and 'education'
 
-  type Mode = 'work' | 'education';
-
-  const toggleMode = (mode: Mode): void => {
-    setIsWork(mode === 'work');
+  const toggleMode = (mode: "work" | "education"): void => {
+    setIsWork(mode === "work");
   };
 
   return (
-    <div className="pt-12 pb-44 tracking-tighter">
-      <p className='text-4xl mb-10 font-bold text-white max-w-4xl mx-10 lg:mx-auto font-custom'>Experience & Education</p>
-      <div className="flex flex-col items-center lg:justify-center lg:mt-20 lg:h-screen font-custom">
-        <div className="flex space-x-4 mb-4 outline outline-1 outline-white p-2 rounded-full">
-          <button
-            onClick={() => toggleMode('work')}
-            className={`px-4 py-2 rounded-full font-semibold transition-all duration-300 ${isWork ? 'bg-white text-black' : 'text-white'
-              }`}
-          >
-            Work
-          </button>
-          <button
-            onClick={() => toggleMode('education')}
-            className={`px-4 py-2 rounded-full font-semibold transition-all duration-300 ${!isWork ? 'bg-white text-black' : 'text-white'
-              }`}
-          >
-            Education
-          </button>
+    <div className="h-screen font-manrope">
+      <div className="bg-black/30 outline outline-white rounded-2xl p-10 drop-shadow-md backdrop-blur-xs">
+        <p className="text-4xl font-bold text-left">Experience</p>
+        <div className="container my-4 flex justify-center items-center">
+          <label className="flex justify-center items-center space-x-2 swap swap-rotate">
+            <input type="checkbox" defaultChecked checked={isWork} onChange={() => toggleMode(isWork ? "education" : "work")} className="transition-all toggle checked:bg-white checked:text-black bg-white text-black" />
+          </label>
         </div>
+
         <div
-          className={`h-screen rounded-lg hidden lg:flex`}
+          className={`transition-opacity duration-700 ease-in-out ${isWork ? "opacity-100" : "opacity-0"
+            }`}
         >
-          {isWork ? (workTimeline()) : (educationTimeline())}
+          {isWork && (
+            <div><ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mb-4">
+              <li>
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5">
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div className="timeline-start mb-10 md:text-end">
+                  <time className="font-mono italic">6/2024 - Present</time>
+                  <div className="text-lg font-black">Founder & Developer | Laina</div>
+                  Designed and developed a smart contracts based decentralized lending & borrowing platform on the Stellar blockchain.
+                </div>
+                <hr className="bg-linear-to-t from-amber-300 to-amber-100" />
+              </li>
+              <li>
+                <hr className="bg-amber-300" />
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5">
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div className="timeline-end md:mb-10">
+                  <time className="font-mono italic">11/2023 - Present</time>
+                  <div className="text-lg font-black">Data Management Expert & Research Coordinator | University of Turku</div>
+                  Deployed a research data storage. Gave training on data management and FAIR principles. Coordinated the largest solar energy research project in Finland. Build models for solar energy production approximation using Python.
+                </div>
+                <hr className="bg-linear-to-t from-amber-500 to-amber-300" />
+              </li>
+              <li>
+                <hr className="bg-amber-500" />
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5">
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div className="timeline-start mb-10 md:text-end">
+                  <time className="font-mono italic">1/2023 - 11/2023</time>
+                  <div className="text-lg font-black">Project Manager | Medicortex</div>
+                  Kickstarted a new project. Ran a research team of two persons in the combined field of biotechnology and electromagnetism. Wrote multiple funding applications to Business Finland and U.S. Department of Defence.
+                </div>
+                <hr className="bg-linear-to-t from-amber-700 to-amber-500" />
+              </li>
+              <li>
+                <hr className="bg-amber-700" />
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5">
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div className="timeline-end md:mb-10">
+                  <time className="font-mono italic">10/2022-1/2023</time>
+                  <div className="text-lg font-black">Production Engineer | Revvity</div>
+                  Helped in the development of medical-grade mass-spectrometer as a specialist. Developed ion path models using SIMION and Lua.
+                </div>
+                <hr className="bg-linear-to-t from-amber-900 to-amber-700" />
+              </li>
+            </ul></div>
+          )}
         </div>
-      </div>
-      <div className="flex flex-col mx-10 items-center lg:hidden">
-        {isWork ? (
-          <div>
-            <div className="pt-5 pr-8 pl-2 pb-2 my-3 outline outline-1 outline-white rounded-md text-white">
-              <h2 className="text-lg mb-2">6/2024 - Present | Founder & Developer | Laina</h2>
-              <p>Designed and developed a smart contracts based decentralized lending & borrowing platform on the Stellar blockchain.</p>
-            </div>
-            <div className="pt-5 pr-8 pl-2 pb-2 my-3 outline outline-1 outline-white rounded-md text-white">
-              <h2 className="text-lg mb-2">11/2023 - Present | Data Management Expert & Research Coordinator | University of Turku</h2>
-              <p>Deployed a research data storage. Gave training on data management and FAIR principles. Coordinated the largest solar energy research project in Finland. Build models for solar energy production approximation using Python.</p>
-            </div>
-            <div className="pt-5 pr-8 pl-2 pb-2 my-3 outline outline-1 outline-white rounded-md text-white">
-              <h2 className="text-lg mb-2">1/2023 - 11/2023 | Project Manager | Medicortex</h2>
-              <p>Kickstarted a new project. Ran a research team of two persons in the combined field of biotechnology and electromagnetism. Wrote multiple funding applications to Business Finland and U.S. Department of Defence.</p>
-            </div>
-            <div className="pt-5 pr-8 pl-2 pb-2 my-3 outline outline-1 outline-white rounded-md text-white">
-              <h2 className="text-lg mb-2">10/2022-1/2023 | Production Engineer | Revvity</h2>
-              <p>Helped in the development of medical-grade mass-spectrometer as a specialist. Developed ion path models using SIMION and Lua.</p>
-            </div>
-          </div>
-        ) : (
-          <div>
-            <div className="pt-5 pr-8 pl-2 pb-2 my-3 outline outline-1 outline-white rounded-md text-white">
-              <h2 className="text-lg mb-2">2023 | IPMA-D</h2>
-              <p>International Project Management Association certificate level D. Completed during my employment at Medicortex.</p>
-            </div>
-            <div className="pt-5 pr-8 pl-2 pb-2 my-3 outline outline-1 outline-white rounded-md text-white">
-              <h2 className="text-lg mb-2">2022 | MSc Physics</h2>
-              <p>Major in industrial and materials physics. Minors in mathematics, computer science, and business. My thesis studied physical spiking neural networks and it gave promising results on potential synapse materials that were able to recognize hand written digits.</p>
-            </div>
-            <div className="pt-5 pr-8 pl-2 pb-2 my-3 outline outline-1 outline-white rounded-md text-white">
-              <h2 className="text-lg mb-2">2020 | BSc Physics</h2>
-              <p>Wrote my thesis about phase-field simulations.</p>
-            </div>
-          </div>)}
+
+        <div
+          className={`transition-opacity duration-700 ease-in-out ${!isWork ? "opacity-100" : "opacity-0"
+            }`}
+        >
+          {!isWork && (
+            <div><ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mb-4">
+              <li>
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5">
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div className="timeline-start mb-10 md:text-end">
+                  <time className="font-mono italic">2023</time>
+                  <div className="text-lg font-black">IPMA-D</div>
+                  International Project Management Association certificate level D. Completed during my employment at Medicortex.
+                </div>
+                <hr className="bg-linear-to-t from-amber-300 to-amber-100" />
+              </li>
+              <li>
+                <hr className="bg-amber-300" />
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5">
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div className="timeline-end md:mb-10">
+                  <time className="font-mono italic">2022</time>
+                  <div className="text-lg font-black">MSc Physics</div>
+                  Major in industrial and materials physics. Minors in mathematics, computer science, and business. My thesis studied physical spiking neural networks and it gave promising results on potential synapse materials that were able to recognize hand written digits.
+                </div>
+                <hr className="bg-linear-to-t from-amber-600 to-amber-300" />
+              </li>
+              <li>
+                <hr className="bg-amber-600" />
+                <div className="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-5 w-5">
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div className="timeline-start mb-10 md:text-end">
+                  <time className="font-mono italic">2020</time>
+                  <div className="text-lg font-black">BSc Physics</div>
+                  Wrote my thesis about phase-field simulations.
+                </div>
+                <hr className="bg-linear-to-t from-amber-900 to-amber-600" />
+              </li>
+            </ul></div>
+          )}
+        </div>
       </div>
     </div>
   );
 }
+

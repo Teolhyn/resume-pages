@@ -1,34 +1,42 @@
+import ProjectCard from "../components/projectcard.tsx";
+
 const Projects = () => {
   return (
-    <div>
-      <h1 className="font-custom text-4xl font-bold tracking-tighter text-white max-w-4xl mx-10 lg:mx-auto py-10 flex">Project portfolio</h1>
-      <div className="font-custom tracking-tighter text-white lg:flex flex-col justify-between items-center h-screen">
-        <div className="lg:flex justify-between w-[896px] h-96 mb-5 mx-10">
-          <a href="https://laina-de.fi" target="_blank" rel="noopener noreferrer">
-            <div className="bg-[#313640] outline outline-white outline-1 h-96 rounded-lg w-[400px] transition-all duration-300 hover:scale-105">
-              <img src="./laina-de.fi_.png" alt="laina defi website preview" className="size-48 rounded-t-lg w-[400px]" />
-              <div className="p-2">
-                <h1 className="font-bold text-2xl">Laina</h1>
-                <p>
-                  Laina is a decentralized lending and borrowing platform offering low fees and trustless transactions.
+    <div className="min-h-[calc(100vh-240px)]">
+
+      <div className="p-10">
+        <div className="flex gap-8 justify-center flex-wrap">
+          <ProjectCard
+            projectUrl="https://laina-de.fi"
+            title="Laina"
+            description="Laina is a decentralized lending and borrowing platform offering low fees and trustless transactions.
                   Built on Stellar's smart contract platform, Soroban, it uses Rust for smart contracts.
                   The front end, developed with React and Astro, connects to the blockchain via TypeScript binding RPC calls.
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="/">
-            <div className="mt-10 lg:mt-0 bg-[#313640] outline outline-white outline-1 h-96 rounded-lg w-[400px] transition-colors duration-300 hover:scale-105">
-              <img src="./portfolio.png" alt="Portfolio website preview" className="size-48 rounded-t-lg w-[400px]" />
-              <div className="p-2">
-                <h1 className="font-bold text-2xl">Resume site</h1>
-                <p>Well. You are already here. This site was built using React and Django.</p>
-              </div>
-            </div>
-          </a>
+"
+            image_url="./project avatar non clip border.png"
+          />
+          <ProjectCard
+            projectUrl="https://github.com/Teolhyn/photography-portfolio-platform"
+            title="Custom Homeassistant UI"
+            description="Still in very early stages. Custom UI for my own home automation. Connected to Home Assistant through websocket."
+            image_url="./homeassistant.png"
+          />
+          <ProjectCard
+            projectUrl="https://draftphotography.netlify.app"
+            title="Photography portfolio"
+            description="Still in very early stages. Custom photography portfolio built on React using Contentful as headless content management system, allowing users to easily
+            upload their content without worrying about code."
+            image_url="./photoportfolio.png"
+          />
+          <ProjectCard
+            projectUrl="https://teolhyn.github.io/resume-pages/"
+            title="Portfolio page"
+            description="Well. You are already here. This site was built using React."
+            image_url="./portfolio2.png"
+          />
         </div>
       </div>
-    </div>
+    </div >
   )
 };
 
