@@ -8,10 +8,11 @@ export default function Experience() {
   };
 
   return (
-    <div>
-      <div className="my-4 flex justify-center">
-        <label className="swap swap-rotate">
-          <input type="checkbox" defaultChecked checked={isWork} onChange={() => toggleMode(isWork ? "education" : "work")} className="transition-all toggle border-white bg-black" />
+    <div className="h-screen">
+      <p className="text-4xl my-10 font-bold text-left">Experience</p>
+      <div className="container my-4 flex justify-center items-center">
+        <label className="flex justify-center items-center space-x-2 swap swap-rotate">
+          <input type="checkbox" defaultChecked checked={isWork} onChange={() => toggleMode(isWork ? "education" : "work")} className="transition-all toggle checked:bg-white checked:text-black bg-white text-black" />
         </label>
       </div>
 
@@ -20,7 +21,7 @@ export default function Experience() {
           }`}
       >
         {isWork && (
-          <div><ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+          <div><ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mb-4">
             <li>
               <div className="timeline-middle">
                 <svg
@@ -113,7 +114,7 @@ export default function Experience() {
           }`}
       >
         {!isWork && (
-          <div><ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+          <div><ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mb-4">
             <li>
               <div className="timeline-middle">
                 <svg
