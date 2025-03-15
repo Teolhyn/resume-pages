@@ -15,15 +15,15 @@ export default function Header() {
       </header>
       <div className="flex ml-auto justify-between items-center w-64 text-white mt-5 mb-5 px-14">
         <a href="https://github.com/Teolhyn">
-          <FontAwesomeIcon icon={faSquareGithub} href='https://github.com/Teolhyn' size='2x' className="transition-opacity duration-100 hover:opacity-60 hidden md:block" />
+          <FontAwesomeIcon icon={faSquareGithub} href='https://github.com/Teolhyn' size='2x' className="transition-opacity duration-100 invisible hover:opacity-60 hidden md:visible" />
           <span className='sr-only'>Go to github.com/Teolhyn</span>
         </a>
         <a href='https://www.linkedin.com/in/teemuhynna/'>
-          <FontAwesomeIcon icon={faLinkedin} size='2x' className="transition-opacity duration-100 hover:opacity-60 hidden md:block" />
+          <FontAwesomeIcon icon={faLinkedin} size='2x' className="transition-opacity duration-100 invisible hover:opacity-60 hidden md:visible" />
           <span className='sr-only'>Go to linkedin.com/in/teemuhynna</span>
         </a>
         <a href='mailto:teemu.hynna@gmail.com'>
-          <FontAwesomeIcon icon={faEnvelope} size='2x' className="transition-opacity duration-100 hover:opacity-60 hidden md:block" />
+          <FontAwesomeIcon icon={faEnvelope} size='2x' className="transition-opacity duration-100 invisible hover:opacity-60 hidden md:visible" />
           <span className='sr-only'>Send email to teemu.hynna@gmail.com</span>
         </a>
       </div>
