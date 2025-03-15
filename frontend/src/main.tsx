@@ -5,7 +5,7 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen bg-gray-950">
       <div className="absolute inset-0 bg-[url('/background2.svg')] bg-cover bg-center"></div>
 
       <div className="absolute inset-0 bg-black/20"></div>
