@@ -7,9 +7,10 @@ interface ProjectCardProps {
   description: string;
   image_url: string;
   alt?: string;
+  preview: boolean;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ projectUrl, title, description, image_url, alt }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ projectUrl, title, description, image_url, alt, preview }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Function to open modal
@@ -25,16 +26,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectUrl, title, descriptio
   return (
     <div>
       <div className="card bg-black/30 backdrop-blur-sm w-96 h-[30rem] drop-shadow-lg outline-white text-white">
-        <figure className="overflow-hidden">
-          <img
-            src={image_url}
-            alt={alt} />
-        </figure>
+        <img className="min-h-[14rem] max-h-[14rem] object-cover overflow-hidden rounded-t-lg object-top"
+          src={image_url}
+          alt={alt} />
         <div className="card-body">
           <h2 className="card-title">{title}</h2>
           <p>{description}</p>
           <div className="card-actions justify-end">
-            <button onClick={openModal} className="btn btn-outline">Open Preview</button>
+            <button onClick={openModal} className="btn btn-outline disabled:btn-disabled" disabled={!preview}>Open Preview</button>
           </div>
         </div>
       </div>

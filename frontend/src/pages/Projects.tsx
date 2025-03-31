@@ -14,12 +14,14 @@ const Projects = () => {
                   The front end, developed with React and Astro, connects to the blockchain via TypeScript binding RPC calls.
 "
             image_url="/project avatar non clip border.png"
+            preview={true}
           />
           <ProjectCard
             projectUrl="https://github.com/Teolhyn/photography-portfolio-platform"
             title="Custom Homeassistant UI"
             description="Still in very early stages. Custom UI for my own home automation. Connected to Home Assistant through websocket."
             image_url="/homeassistant.png"
+            preview={true}
           />
           <ProjectCard
             projectUrl="https://draftphotography.netlify.app"
@@ -27,12 +29,7 @@ const Projects = () => {
             description="Still in very early stages. Custom photography portfolio built on React using Contentful as headless content management system, allowing users to easily
             upload their content without worrying about code."
             image_url="/photoportfolio.png"
-          />
-          <ProjectCard
-            projectUrl="https://teolhyn.github.io/resume-pages/"
-            title="Portfolio page"
-            description="Well. You are already here. This site was built using React."
-            image_url="/portfolio2.png"
+            preview={false}
           />
         </div>
       </div>
