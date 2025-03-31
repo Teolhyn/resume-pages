@@ -13,26 +13,26 @@ const Projects = () => {
                   Built on Stellar's smart contract platform, Soroban, it uses Rust for smart contracts.
                   The front end, developed with React and Astro, connects to the blockchain via TypeScript binding RPC calls.
 "
-            image_url="./project avatar non clip border.png"
+            image_url="/project avatar non clip border.png"
           />
           <ProjectCard
             projectUrl="https://github.com/Teolhyn/photography-portfolio-platform"
             title="Custom Homeassistant UI"
             description="Still in very early stages. Custom UI for my own home automation. Connected to Home Assistant through websocket."
-            image_url="./homeassistant.png"
+            image_url="/homeassistant.png"
           />
           <ProjectCard
             projectUrl="https://draftphotography.netlify.app"
             title="Photography portfolio"
             description="Still in very early stages. Custom photography portfolio built on React using Contentful as headless content management system, allowing users to easily
             upload their content without worrying about code."
-            image_url="./photoportfolio.png"
+            image_url="/photoportfolio.png"
           />
           <ProjectCard
             projectUrl="https://teolhyn.github.io/resume-pages/"
             title="Portfolio page"
             description="Well. You are already here. This site was built using React."
-            image_url="./portfolio2.png"
+            image_url="/portfolio2.png"
           />
         </div>
       </div>
