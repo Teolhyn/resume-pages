@@ -8,7 +8,7 @@ export default function Experience() {
   };
 
   return (
-    <div className="h-screen font-manrope">
+    <div className="h-screen font-manrope text-white">
       <div className="bg-black/30 outline outline-white rounded-2xl p-10 drop-shadow-md backdrop-blur-xs">
         <p className="text-4xl font-bold text-left">Experience</p>
         <div className="container my-4 flex justify-center items-center">
@@ -41,10 +41,10 @@ export default function Experience() {
                   <div className="text-lg font-black">Founder & Developer | Laina</div>
                   Designed and developed a smart contracts based decentralized lending & borrowing platform on the Stellar blockchain.
                 </div>
-                <hr className="bg-linear-to-t from-amber-300 to-amber-100" />
+                <hr className="bg-white" />
               </li>
               <li>
-                <hr className="bg-amber-300" />
+                <hr className="bg-white" />
                 <div className="timeline-middle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -62,10 +62,10 @@ export default function Experience() {
                   <div className="text-lg font-black">Data Management Expert & Research Coordinator | University of Turku</div>
                   Deployed a research data storage. Gave training on data management and FAIR principles. Coordinated the largest solar energy research project in Finland. Build models for solar energy production approximation using Python.
                 </div>
-                <hr className="bg-linear-to-t from-amber-500 to-amber-300" />
+                <hr className="bg-white" />
               </li>
               <li>
-                <hr className="bg-amber-500" />
+                <hr className="bg-white" />
                 <div className="timeline-middle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -83,10 +83,10 @@ export default function Experience() {
                   <div className="text-lg font-black">Project Manager | Medicortex</div>
                   Kickstarted a new project. Ran a research team of two persons in the combined field of biotechnology and electromagnetism. Wrote multiple funding applications to Business Finland and U.S. Department of Defence.
                 </div>
-                <hr className="bg-linear-to-t from-amber-700 to-amber-500" />
+                <hr className="bg-white" />
               </li>
               <li>
-                <hr className="bg-amber-700" />
+                <hr className="bg-white" />
                 <div className="timeline-middle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +104,7 @@ export default function Experience() {
                   <div className="text-lg font-black">Production Engineer | Revvity</div>
                   Helped in the development of medical-grade mass-spectrometer as a specialist. Developed ion path models using SIMION and Lua.
                 </div>
-                <hr className="bg-linear-to-t from-amber-900 to-amber-700" />
+                <hr className="bg-white" />
               </li>
             </ul></div>
           )}
@@ -134,10 +134,10 @@ export default function Experience() {
                   <div className="text-lg font-black">IPMA-D</div>
                   International Project Management Association certificate level D. Completed during my employment at Medicortex.
                 </div>
-                <hr className="bg-linear-to-t from-amber-300 to-amber-100" />
+                <hr className="bg-white" />
               </li>
               <li>
-                <hr className="bg-amber-300" />
+                <hr className="bg-white" />
                 <div className="timeline-middle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -155,10 +155,10 @@ export default function Experience() {
                   <div className="text-lg font-black">MSc Physics</div>
                   Major in industrial and materials physics. Minors in mathematics, computer science, and business. My thesis studied physical spiking neural networks and it gave promising results on potential synapse materials that were able to recognize hand written digits.
                 </div>
-                <hr className="bg-linear-to-t from-amber-600 to-amber-300" />
+                <hr className="bg-white" />
               </li>
               <li>
-                <hr className="bg-amber-600" />
+                <hr className="bg-white" />
                 <div className="timeline-middle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -176,7 +176,7 @@ export default function Experience() {
                   <div className="text-lg font-black">BSc Physics</div>
                   Wrote my thesis about phase-field simulations.
                 </div>
-                <hr className="bg-linear-to-t from-amber-900 to-amber-600" />
+                <hr className="bg-white" />
               </li>
             </ul></div>
           )}
