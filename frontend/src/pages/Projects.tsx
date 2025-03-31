@@ -21,7 +21,7 @@ const Projects = () => {
             title="Custom Homeassistant UI"
             description="Still in very early stages. Custom UI for my own home automation. Connected to Home Assistant through websocket."
             image_url="/homeassistant.png"
-            preview={true}
+            preview={false}
           />
           <ProjectCard
             projectUrl="https://draftphotography.netlify.app"
@@ -29,7 +29,7 @@ const Projects = () => {
             description="Still in very early stages. Custom photography portfolio built on React using Contentful as headless content management system, allowing users to easily
             upload their content without worrying about code."
             image_url="/photoportfolio.png"
-            preview={false}
+            preview={true}
           />
         </div>
       </div>
