@@ -22,9 +22,9 @@ export default function Header() {
           <FontAwesomeIcon icon={faLinkedin} size='2x' className="transition-opacity duration-100 invisible hover:opacity-60 hidden md:visible" />
           <span className='sr-only'>Go to linkedin.com/in/teemuhynna</span>
         </a>
-        <a href='mailto:teemu.hynna@gmail.com'>
+        <a href='mailto:teemu@hynnaconsulting.fi'>
           <FontAwesomeIcon icon={faEnvelope} size='2x' className="transition-opacity duration-100 invisible hover:opacity-60 hidden md:visible" />
-          <span className='sr-only'>Send email to teemu.hynna@gmail.com</span>
+          <span className='sr-only'>Send email to teemu@hynnaconsulting.fi</span>
         </a>
       </div>
     </div>
