@@ -8,8 +8,8 @@ export default function Experience() {
   };
 
   return (
-    <div className="h-screen font-manrope text-white">
-      <div className="bg-black/30 outline outline-white rounded-2xl p-10 drop-shadow-md backdrop-blur-xs">
+    <div className="min-h-screen font-manrope text-white">
+      <div className="bg-black/30 outline outline-white rounded-2xl mx-10 md:mx-auto p-10 drop-shadow-md backdrop-blur-xs">
         <p className="text-4xl font-bold text-left">Experience</p>
         <div className="container my-4 flex justify-center items-center">
           <label className="flex justify-center items-center space-x-2 swap swap-rotate">

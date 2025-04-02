@@ -25,8 +25,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectUrl, title, descriptio
 
   return (
     <div>
-      <div className="card bg-black/30 backdrop-blur-sm w-96 h-[30rem] drop-shadow-lg outline-white text-white">
-        <img className="min-h-[14rem] max-h-[14rem] object-cover overflow-hidden rounded-t-lg object-top aspect-384/224"
+      <div className="card bg-black/30 backdrop-blur-sm w-80 md:w-96 max-w-screen h-[30rem] drop-shadow-lg outline-white text-white">
+        <img className="min-h-[14rem] max-h-[14rem] object-cover overflow-hidden rounded-t-lg object-left-top aspect-384/224"
           src={image_url}
           alt={alt} />
         <div className="card-body">

@@ -5,7 +5,7 @@ export default function Hero() {
         <img src='/img22.avif' alt='Teemu Hynnä' className="flex items-start justify-center mx-auto w-64 rounded-md mb-5 aspect-square" />
       </div>
       <div>
-        <div className="flex w-full items-center justify-center text-7xl font-extrabold mx-auto text-white mb-5">
+        <div className="flex w-full md:items-center text-center justify-center text-7xl font-extrabold md:mx-auto text-white mb-5">
           Hi, I'm Teemu Hynnä
         </div>
         <div className="flex w-full items-center justify-center mb-10">

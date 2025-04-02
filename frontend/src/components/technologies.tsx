@@ -37,7 +37,7 @@ const technologies = [
 export default function Technologies() {
   return (
     <div className="py-12 tracking-tighter">
-      <div className="text-white max-w-4xl mx-auto font-manrope bg-black/30 outline outline-white rounded-2xl p-10 drop-shadow-md backdrop-blur-xs">
+      <div className="text-white max-w-4xl mx-10 md:mx-auto font-manrope bg-black/30 outline outline-white rounded-2xl p-10 drop-shadow-md backdrop-blur-xs">
         <p className="text-4xl mb-10 font-bold text-left">Technologies</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {technologies.map((tech, index) => (
