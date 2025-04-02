@@ -27,8 +27,8 @@ const Projects = () => {
             projectUrl="https://draftphotography.netlify.app"
             title="Photography portfolio"
             description="Still in very early stages. Custom photography portfolio built on React using Contentful as headless content management system, allowing users to easily
-            upload their content without worrying about code."
-            image_url="/photoportfolio.png"
+            upload their content without worrying about code or styling."
+            image_url="/photoportfolio2.png"
             preview={true}
           />
         </div>
