@@ -1,18 +1,27 @@
 import '../index.css';
-import Technologies from "../components/technologies";
 import Hero from "../components/hero";
-import Experience from "../components/experience"
+import { lazy, Suspense } from 'react';
+
+const Technologies = lazy(() => import("../components/technologies"));
+const Experience = lazy(() => import("../components/experience"));
 
 function Home() {
   return (
     <div className="App">
-      <Hero></Hero>
-      <Technologies></Technologies>
+      <Hero />
+
+      <Suspense fallback={<div>Loading Technologies...</div>}>
+        <Technologies />
+      </Suspense>
+
       <div className='max-w-4xl mx-auto'>
-        <Experience></Experience>
+        <Suspense fallback={<div>Loading Experience...</div>}>
+          <Experience />
+        </Suspense>
       </div>
     </div>
   );
 }
 
 export default Home;
+
