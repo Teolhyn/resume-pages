@@ -8,12 +8,12 @@ export default function Experience() {
   };
 
   return (
-    <div className="min-h-screen font-manrope text-white">
-      <div className="bg-black/30 outline outline-white rounded-2xl mx-10 md:mx-auto p-10 drop-shadow-md backdrop-blur-xs">
-        <p className="text-4xl font-bold text-left">Experience</p>
+    <div className="font-manrope text-black max-w-3xl">
+      <div className="bg-white outline-3 outline-black p-10 shadow-xl min-h-10/12">
+        <p className="text-4xl font-bold text-left">&lt;Experience /&gt;</p>
         <div className="container my-4 flex justify-center items-center">
           <label className="flex justify-center items-center space-x-2 swap swap-rotate">
-            <input type="checkbox" defaultChecked checked={isWork} onChange={() => toggleMode(isWork ? "education" : "work")} className="transition-all toggle checked:bg-white checked:text-black bg-white text-black" />
+            <input type="checkbox" defaultChecked checked={isWork} onChange={() => toggleMode(isWork ? "education" : "work")} className="transition-all toggle checked:bg-black checked:text-white bg-black text-white" />
           </label>
         </div>
 
@@ -22,7 +22,7 @@ export default function Experience() {
             }`}
         >
           {isWork && (
-            <div><ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mb-4">
+            <div className="tracking-tight leading-5"><ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mb-4">
               <li>
                 <div className="timeline-middle">
                   <svg
@@ -38,13 +38,12 @@ export default function Experience() {
                 </div>
                 <div className="timeline-start mb-10 md:text-end">
                   <time className="font-mono italic">6/2024 - Present</time>
-                  <div className="text-lg font-black">Founder & Developer | Laina</div>
-                  Designed and developed a smart contracts based decentralized lending & borrowing platform on the Stellar blockchain.
+                  <div className="text-lg/6 font-black">Founder & Developer | Laina</div>
                 </div>
-                <hr className="bg-white" />
+                <hr className="bg-black" />
               </li>
               <li>
-                <hr className="bg-white" />
+                <hr className="bg-black" />
                 <div className="timeline-middle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -60,12 +59,11 @@ export default function Experience() {
                 <div className="timeline-end md:mb-10">
                   <time className="font-mono italic">11/2023 - Present</time>
                   <div className="text-lg font-black">Data Management Expert & Research Coordinator | University of Turku</div>
-                  Deployed a research data storage. Gave training on data management and FAIR principles. Coordinated the largest solar energy research project in Finland. Build models for solar energy production approximation using Python.
                 </div>
-                <hr className="bg-white" />
+                <hr className="bg-black" />
               </li>
               <li>
-                <hr className="bg-white" />
+                <hr className="bg-black" />
                 <div className="timeline-middle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -81,12 +79,11 @@ export default function Experience() {
                 <div className="timeline-start mb-10 md:text-end">
                   <time className="font-mono italic">1/2023 - 11/2023</time>
                   <div className="text-lg font-black">Project Manager | Medicortex</div>
-                  Kickstarted a new project. Ran a research team of two persons in the combined field of biotechnology and electromagnetism. Wrote multiple funding applications to Business Finland and U.S. Department of Defence.
                 </div>
-                <hr className="bg-white" />
+                <hr className="bg-black" />
               </li>
               <li>
-                <hr className="bg-white" />
+                <hr className="bg-black" />
                 <div className="timeline-middle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -102,9 +99,8 @@ export default function Experience() {
                 <div className="timeline-end md:mb-10">
                   <time className="font-mono italic">10/2022-1/2023</time>
                   <div className="text-lg font-black">Production Engineer | Revvity</div>
-                  Helped in the development of medical-grade mass-spectrometer as a specialist. Developed ion path models using SIMION and Lua.
                 </div>
-                <hr className="bg-white" />
+                <hr className="bg-black" />
               </li>
             </ul></div>
           )}
@@ -115,7 +111,7 @@ export default function Experience() {
             }`}
         >
           {!isWork && (
-            <div><ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mb-4">
+            <div className="tracking-tight leading-5"><ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mb-4">
               <li>
                 <div className="timeline-middle">
                   <svg
@@ -131,13 +127,12 @@ export default function Experience() {
                 </div>
                 <div className="timeline-start mb-10 md:text-end">
                   <time className="font-mono italic">2023</time>
-                  <div className="text-lg font-black">IPMA-D</div>
-                  International Project Management Association certificate level D. Completed during my employment at Medicortex.
+                  <div className="text-lg font-black">International Project Management Association Certificate D</div>
                 </div>
-                <hr className="bg-white" />
+                <hr className="bg-black" />
               </li>
               <li>
-                <hr className="bg-white" />
+                <hr className="bg-black" />
                 <div className="timeline-middle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -152,13 +147,12 @@ export default function Experience() {
                 </div>
                 <div className="timeline-end md:mb-10">
                   <time className="font-mono italic">2022</time>
-                  <div className="text-lg font-black">MSc Physics</div>
-                  Major in industrial and materials physics. Minors in mathematics, computer science, and business. My thesis studied physical spiking neural networks and it gave promising results on potential synapse materials that were able to recognize hand written digits.
+                  <div className="text-lg font-black">MSc in Industrial Physics</div>
                 </div>
-                <hr className="bg-white" />
+                <hr className="bg-black" />
               </li>
               <li>
-                <hr className="bg-white" />
+                <hr className="bg-black" />
                 <div className="timeline-middle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -173,10 +167,9 @@ export default function Experience() {
                 </div>
                 <div className="timeline-start mb-10 md:text-end">
                   <time className="font-mono italic">2020</time>
-                  <div className="text-lg font-black">BSc Physics</div>
-                  Wrote my thesis about phase-field simulations.
+                  <div className="text-lg font-black">BSc in applied Physics</div>
                 </div>
-                <hr className="bg-white" />
+                <hr className="bg-black" />
               </li>
             </ul></div>
           )}

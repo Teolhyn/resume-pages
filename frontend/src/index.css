@@ -2,7 +2,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-
 @theme {
   --font-manrope: "Manrope", sans-serif;
 }

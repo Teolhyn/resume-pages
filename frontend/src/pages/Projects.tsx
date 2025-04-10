@@ -2,7 +2,7 @@ import ProjectCard from "../components/projectcard.tsx";
 
 const Projects = () => {
   return (
-    <div className="min-h-[calc(100vh-240px)]">
+    <div className="min-h-screen">
 
       <div className="p-10">
         <div className="flex gap-8 justify-center flex-wrap">

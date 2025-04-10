@@ -1,23 +1,46 @@
+import { useEffect, useState } from 'react';
 import '../index.css';
 import Hero from "../components/hero";
-import { lazy, Suspense } from 'react';
-
-const Technologies = lazy(() => import("../components/technologies"));
-const Experience = lazy(() => import("../components/experience"));
+import Technologies from '../components/technologies';
+import Experience from '../components/experience';
 
 function Home() {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
+
   return (
-    <div className="App">
-      <Hero />
+    <div>
+      <div className='lg:flex justify-between mx-auto min-h-screen items-start py-12 gap-10 max-w-7xl'>
 
-      <Suspense fallback={<div>Loading Technologies...</div>}>
-        <Technologies />
-      </Suspense>
-
-      <div className='max-w-4xl mx-auto'>
-        <Suspense fallback={<div>Loading Experience...</div>}>
+        <div
+          className={`transition-all duration-800 transform
+            ${loaded ? 'translate-y-0' : 'translate-y-800'}
+          `}
+        >
           <Experience />
-        </Suspense>
+        </div>
+
+        <div>
+          <div
+            className={`transition-all duration-800 transform
+              ${loaded ? 'translate-y-0' : '-translate-y-0'}
+            `}
+          >
+            <Hero />
+          </div>
+
+          <div
+            className={`mt-5 transition-all duration-800 transform
+              ${loaded ? 'translate-x-0' : 'translate-x-400'}
+            `}
+          >
+            <Technologies />
+          </div>
+        </div>
+
       </div>
     </div>
   );
