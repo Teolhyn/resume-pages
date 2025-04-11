@@ -5,10 +5,8 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <div className="relative min-h-screen bg-white">
-      <div className="relative">
-        <App />
-      </div>
+    <div className="min-h-screen bg-white dark:bg-black">
+      <App />
     </div>
   </StrictMode>
 
