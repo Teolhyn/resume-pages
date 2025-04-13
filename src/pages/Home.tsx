@@ -5,7 +5,7 @@ import { faFile } from '@fortawesome/free-solid-svg-icons'
 import '../index.css';
 import Hero from "../components/hero";
 import ProjectGridCard from '../components/projectgridcard';
-import BlogGridCard from '../components/bloggridcard';
+// import BlogGridCard from '../components/bloggridcard';
 
 function Home() {
   return (
@@ -94,16 +94,16 @@ function Home() {
           />
         </div>
       </div>
-      <div>
-        <h1 className='text-lg font-bold'>Blog</h1>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
-          <BlogGridCard
-            title="My journey with Laina"
-            url='/'
-            published={new Date('2025-04-11')}
-          />
-        </div>
-      </div>
+      {/* <div> */}
+      {/*   <h1 className='text-lg font-bold'>Blog</h1> */}
+      {/*   <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'> */}
+      {/*     <BlogGridCard */}
+      {/*       title="My journey with Laina" */}
+      {/*       url='/' */}
+      {/*       published={new Date('2025-04-11')} */}
+      {/*     /> */}
+      {/*   </div> */}
+      {/* </div> */}
     </div>
   );
 }
