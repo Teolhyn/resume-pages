@@ -92,6 +92,12 @@ function Home() {
             description="Still in very early stages. Custom photography portfolio built on React using Contentful as headless content management system, allowing users to easily upload their content without worrying about code or styling."
             technologies={['ReactJS', 'Contentful', 'Headless CMS']}
           />
+          <ProjectGridCard
+            projectUrl='https://kumpi-sahko.vercel.app/'
+            title='Electricity price calculator'
+            description="Web app that calculates your electricity bill for both constant priced and spot priced electricity, based on consumption data from Fingrid Datahub. It also evaluates how well you electricity usage is optimized"
+            technologies={['Next.js', 'ReactJS', 'PostgreSQL', 'Neon']}
+          />
         </div>
       </div>
       {/* <div> */}
