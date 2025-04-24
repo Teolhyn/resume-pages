@@ -29,7 +29,7 @@ function Home() {
 
             <span className='relative group'>
               <span className='mr-1'>Github</span>
-              <span className='absolute bottom-0 left-0 w-0 h-[2px] bg-white rounded-sm transition-all duration-300 group-hover:w-full'></span>
+              <span className='absolute bottom-0 left-0 w-0 h-[2px] dark:bg-white bg-black rounded-sm transition-all duration-300 group-hover:w-full'></span>
             </span>
 
             <FontAwesomeIcon icon={faUpRightFromSquare} size='xs' />
@@ -46,7 +46,7 @@ function Home() {
 
             <span className='relative group'>
               <span className='mr-1'>LinkedIn</span>
-              <span className='absolute bottom-0 left-0 w-0 h-[2px] bg-white rounded-sm transition-all duration-300 group-hover:w-full'></span>
+              <span className='absolute bottom-0 left-0 w-0 h-[2px] dark:bg-white bg-black rounded-sm transition-all duration-300 group-hover:w-full'></span>
             </span>
 
             <FontAwesomeIcon icon={faUpRightFromSquare} size='xs' />
@@ -63,7 +63,7 @@ function Home() {
 
             <span className='relative group'>
               <span className='mr-1'>CV</span>
-              <span className='absolute bottom-0 left-0 w-0 h-[2px] bg-white rounded-sm transition-all duration-300 group-hover:w-full'></span>
+              <span className='absolute bottom-0 left-0 w-0 h-[2px] dark:bg-white bg-black rounded-sm transition-all duration-300 group-hover:w-full'></span>
             </span>
 
             <FontAwesomeIcon icon={faUpRightFromSquare} size='xs' />
@@ -96,7 +96,7 @@ function Home() {
             projectUrl='https://kumpi-sahko.vercel.app/'
             title='Electricity price calculator'
             description="Web app that calculates your electricity bill for both constant priced and spot priced electricity, based on consumption data from Fingrid Datahub. It also evaluates how well your electricity usage is optimized."
-            technologies={['Next.js', 'ReactJS', 'PostgreSQL', 'Neon']}
+            technologies={['Next.js', 'ReactJS', 'PostgreSQL', 'Prisma', 'Neon']}
           />
         </div>
       </div>
