@@ -95,7 +95,7 @@ function Home() {
           <ProjectGridCard
             projectUrl='https://kumpi-sahko.vercel.app/'
             title='Electricity price calculator'
-            description="Web app that calculates your electricity bill for both constant priced and spot priced electricity, based on consumption data from Fingrid Datahub. It also evaluates how well you electricity usage is optimized"
+            description="Web app that calculates your electricity bill for both constant priced and spot priced electricity, based on consumption data from Fingrid Datahub. It also evaluates how well your electricity usage is optimized."
             technologies={['Next.js', 'ReactJS', 'PostgreSQL', 'Neon']}
           />
         </div>
