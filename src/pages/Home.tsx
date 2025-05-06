@@ -9,7 +9,7 @@ import ProjectGridCard from '../components/projectgridcard';
 
 function Home() {
   return (
-    <div className='max-w-[74rem] mx-3 xl:mx-auto font-dmsans tracking-tight text-black dark:text-white'>
+    <div className='max-w-[74rem] min-h-screen mx-3 xl:mx-auto font-dmsans tracking-tight text-black dark:text-white'>
       <div className='lg:flex justify-between mx-auto items-start pt-12 mb-3 gap-10 max-w-7xl'>
         <div>
           <Hero />
