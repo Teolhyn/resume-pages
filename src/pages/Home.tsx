@@ -93,7 +93,7 @@ function Home() {
             technologies={['ReactJS', 'Contentful', 'Headless CMS']}
           />
           <ProjectGridCard
-            projectUrl='https://kumpi-sahko.vercel.app/'
+            projectUrl='https://kumpisähkö.fi'
             title='Electricity price calculator'
             description="Web app that calculates your electricity bill for both constant priced and spot priced electricity, based on consumption data from Fingrid Datahub. It also evaluates how well your electricity usage is optimized."
             technologies={['Next.js', 'ReactJS', 'PostgreSQL', 'Prisma', 'Neon']}
