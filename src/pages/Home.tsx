@@ -87,12 +87,6 @@ function Home() {
             technologies={['ReactJS', 'TypeScript', 'WebSocket']}
           />
           <ProjectGridCard
-            projectUrl='https://draftphotography.netlify.app/'
-            title='Photography Portfolio'
-            description="Still in very early stages. Custom photography portfolio built on React using Contentful as headless content management system, allowing users to easily upload their content without worrying about code or styling."
-            technologies={['ReactJS', 'Contentful', 'Headless CMS']}
-          />
-          <ProjectGridCard
             projectUrl='https://kumpisähkö.fi'
             title='Electricity price calculator'
             description="Web app that calculates your electricity bill for both constant priced and spot priced electricity, based on consumption data from Fingrid Datahub. It also evaluates how well your electricity usage is optimized."
