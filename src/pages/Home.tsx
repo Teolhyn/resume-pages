@@ -81,6 +81,12 @@ function Home() {
             technologies={['Rust', 'ReactJS', 'TypeScript', 'Smart Contracts']}
           />
           <ProjectGridCard
+            projectUrl='https://teolhyn.github.io/no-loss-lottery/'
+            title='No Loss Lottery'
+            description="No Loss Lottery built on Stellar on top of blend DeFi protocol. Completely trustless and decentralized. This project was built for a Dorahacks hackathon which required the project to be built on top of the Stellar Scaffold framework. Contracts are written in rust and frontend is built with React and TypeScript. Wallet connections are handled with Stellar Wallets Kit, which was also a requirement of the hackathon."
+            technologies={['Rust', 'ReactJS', 'TypeScript', 'Smart Contracts']}
+          />
+          <ProjectGridCard
             projectUrl='https://github.com/Teolhyn/homeassistant-custom-ui'
             title='Custom Homeassistant UI'
             description="Still in very early stages. Custom UI for my own home automation. Connected to Home Assistant through websocket."
