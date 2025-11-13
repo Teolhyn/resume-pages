@@ -5,6 +5,7 @@ import { faFile } from '@fortawesome/free-solid-svg-icons'
 import '../index.css';
 import Hero from "../components/hero";
 import ProjectGridCard from '../components/projectgridcard';
+import ScientificPublication from '../components/ScientificPublication';
 // import BlogGridCard from '../components/bloggridcard';
 
 function Home() {
@@ -72,7 +73,7 @@ function Home() {
         </div>
       </div>
       <div className='mb-8'>
-        <h1 className='text-lg font-bold mb-2'>Work and Projects</h1>
+        <h1 className='text-2xl font-bold mb-2'>Work and Projects</h1>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
           <ProjectGridCard
             projectUrl='https://laina-de.fi'
@@ -97,6 +98,15 @@ function Home() {
             title='Electricity price calculator'
             description="Web app that calculates your electricity bill for both constant priced and spot priced electricity, based on consumption data from Fingrid Datahub. It also evaluates how well your electricity usage is optimized."
             technologies={['Next.js', 'ReactJS', 'PostgreSQL', 'Prisma', 'Neon']}
+          />
+        </div>
+      </div>
+      <div className='mb-8'>
+        <h1 className='text-2xl font-bold mb-2'>Scientific Publications</h1>
+        <div>
+          <ScientificPublication
+            url='https://pubs.acs.org/doi/full/10.1021/acsaelm.3c01273'
+            title='Bioplausible Synaptic Behavior of Al/Gd0.3Ca0.7MnO3/Au Memristive Devices for Unsupervised Spiking Neural Networks'
           />
         </div>
       </div>
