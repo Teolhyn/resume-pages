@@ -103,10 +103,14 @@ function Home() {
       </div>
       <div className='mb-8'>
         <h1 className='text-2xl font-bold mb-2'>Scientific Publications</h1>
-        <div>
+        <div className='space-y-2'>
           <ScientificPublication
-            url='https://pubs.acs.org/doi/full/10.1021/acsaelm.3c01273'
+            url='https://doi.org/10.1021/acsaelm.3c01273'
             title='Bioplausible Synaptic Behavior of Al/Gd0.3Ca0.7MnO3/Au Memristive Devices for Unsupervised Spiking Neural Networks'
+          />
+          <ScientificPublication
+            url="https://doi.org/10.1016/j.apenergy.2025.127022"
+            title="Performance evaluation of high latitude agrivoltaic systems with vertically mounted bifacial panels"
           />
         </div>
       </div>
