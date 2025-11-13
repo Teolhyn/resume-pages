@@ -83,7 +83,7 @@ function Home() {
           <ProjectGridCard
             projectUrl='https://teolhyn.github.io/no-loss-lottery/'
             title='No Loss Lottery'
-            description="No Loss Lottery built on Stellar on top of blend DeFi protocol. Completely trustless and decentralized. This project was built for a Dorahacks hackathon which required the project to be built on top of the Stellar Scaffold framework. Contracts are written in rust and frontend is built with React and TypeScript. Wallet connections are handled with Stellar Wallets Kit, which was also a requirement of the hackathon."
+            description="No Loss Lottery built on Stellar on top of Blend DeFi protocol. This project was built for a Dorahacks hackathon and it achieved 2nd place from almost 300 builders. The hackathon required the project to be built on top of the Stellar Scaffold framework. Contracts are written in rust and frontend is built with React and TypeScript. Wallet connections are handled with Stellar Wallets Kit, which was also a requirement of the hackathon."
             technologies={['Rust', 'ReactJS', 'TypeScript', 'Smart Contracts']}
           />
           <ProjectGridCard
