@@ -80,24 +80,40 @@ function Home() {
             title='Laina DeFi'
             description="Laina is a decentralized lending and borrowing platform offering low fees and trustless transactions. Built on Stellar's smart contract platform, Soroban, it uses Rust for smart contracts. The front end, developed with React and Astro, connects to the blockchain via TypeScript binding RPC calls."
             technologies={['Rust', 'ReactJS', 'TypeScript', 'Smart Contracts']}
+            repo_name='laina'
+            user_name='laina-defi'
           />
           <ProjectGridCard
             projectUrl='https://teolhyn.github.io/no-loss-lottery/'
             title='No Loss Lottery'
             description="No Loss Lottery built on Stellar on top of Blend DeFi protocol. This project was built for a Dorahacks hackathon and it achieved 2nd place from almost 300 builders. The hackathon required the project to be built on top of the Stellar Scaffold framework. Contracts are written in rust and frontend is built with React and TypeScript. Wallet connections are handled with Stellar Wallets Kit, which was also a requirement of the hackathon."
             technologies={['Rust', 'ReactJS', 'TypeScript', 'Smart Contracts']}
+            repo_name='no-loss-lottery'
+            user_name='teolhyn'
           />
           <ProjectGridCard
-            projectUrl='https://github.com/Teolhyn/homeassistant-custom-ui'
-            title='Custom Homeassistant UI'
-            description="Still in very early stages. Custom UI for my own home automation. Connected to Home Assistant through websocket."
-            technologies={['ReactJS', 'TypeScript', 'WebSocket']}
+            projectUrl='https://github.com/Teolhyn/denetui'
+            title='Denetui'
+            description='A terminal user interface for reading top daily dev.to news in terminal. Built on Rust, hosted backend on dedicated server with Caddy reverse proxy and published binaries in crates.io.'
+            technologies={["Rust", "Caddy"]}
+            repo_name='denetui'
+            user_name='teolhyn'
           />
           <ProjectGridCard
             projectUrl='https://kumpisähkö.fi'
             title='Electricity price calculator'
             description="Web app that calculates your electricity bill for both constant priced and spot priced electricity, based on consumption data from Fingrid Datahub. It also evaluates how well your electricity usage is optimized."
             technologies={['Next.js', 'ReactJS', 'PostgreSQL', 'Prisma', 'Neon']}
+            repo_name='kumpi-sahko'
+            user_name='teolhyn'
+          />
+          <ProjectGridCard
+            projectUrl='https://github.com/Teolhyn/homeassistant-custom-ui'
+            title='Custom Homeassistant UI'
+            description="Still in very early stages. Custom UI for my own home automation. Connected to Home Assistant through websocket."
+            technologies={['ReactJS', 'TypeScript', 'WebSocket']}
+            repo_name='homeassistant-custom-ui'
+            user_name='teolhyn'
           />
         </div>
       </div>
