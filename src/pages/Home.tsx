@@ -17,7 +17,7 @@ function Home() {
         </div>
       </div>
       <div className='mb-8'>
-        <h1 className='text-lg font-bold mb-2'>Links</h1>
+        <h2 className='text-lg font-bold mb-2'>Links</h2>
         <div>
           <a
             href="https://github.com/Teolhyn"
@@ -73,18 +73,23 @@ function Home() {
         </div>
       </div>
       <div className='mb-8'>
+        <h1 className='text-2xl font-bold mb-2'>About Me</h1>
+        <p className='font-light mb-2'>Ever since I was 14 (which was 14 years ago) and my dad bought me an Arduino, showed me a program that made the on-board LED blink, and explained the code to me line by line, I have been hooked to programming. What started from Arduino, quickly transitioned to small games. Games changed to a more academic use, from creating phase-field model in my bachelors thesis to modelling spiking neural networks based on physical memristors for my masters (See Scientific Publications 😉). While in university I also got interested in web development, which then evolved to web3 development due to my interest in all things blockchain. I am still a generalist by heart, but lately I have mainly worked on full-stack applications in both web2 and web3 worlds.</p>
+        <p className='font-light'>While tinkering with computers is a passionate hobby of mine, there are other things in my life. I am a father of a beautiful little girl (and a cat!), and a husband of a lovely wife. On my free time I love to do anything outdoors, especially hiking and foraging. During summer days I really like to spend my days at sea.</p>
+      </div>
+      <div className='mb-8'>
         <h1 className='text-2xl font-bold mb-2'>Work and Projects</h1>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
           <ProjectGridCard
-            projectUrl='https://laina-de.fi'
+            projectUrl='/laina'
             title='Laina DeFi'
-            description="Laina is a decentralized lending and borrowing platform offering low fees and trustless transactions. Built on Stellar's smart contract platform, Soroban, it uses Rust for smart contracts. The front end, developed with React and Astro, connects to the blockchain via TypeScript binding RPC calls."
+            description="Laina (founded by me) is a decentralized lending and borrowing platform offering low fees and trustless transactions. Built on Stellar's smart contract platform, Soroban, it uses Rust for smart contracts. The front end, developed with React and Astro, connects to the blockchain via TypeScript binding RPC calls."
             technologies={['Rust', 'ReactJS', 'TypeScript', 'Smart Contracts']}
             repo_name='laina'
             user_name='laina-defi'
           />
           <ProjectGridCard
-            projectUrl='https://github.com/Teolhyn/no-loss-lottery'
+            projectUrl='/nolosslottery'
             title='No Loss Lottery'
             description="No Loss Lottery built on Stellar on top of Blend DeFi protocol. This project was built for a Dorahacks hackathon and it achieved 2nd place from almost 300 builders. The hackathon required the project to be built on top of the Stellar Scaffold framework. Contracts are written in rust and frontend is built with React and TypeScript. Wallet connections are handled with Stellar Wallets Kit, which was also a requirement of the hackathon."
             technologies={['Rust', 'ReactJS', 'TypeScript', 'Smart Contracts']}
@@ -92,7 +97,7 @@ function Home() {
             user_name='teolhyn'
           />
           <ProjectGridCard
-            projectUrl='https://github.com/Teolhyn/denetui'
+            projectUrl='/denetui'
             title='Denetui'
             description='A terminal user interface for reading top daily dev.to news in terminal. Built on Rust, hosted backend on dedicated server with Caddy reverse proxy and published binaries in crates.io.'
             technologies={["Rust", "Caddy"]}
@@ -100,7 +105,7 @@ function Home() {
             user_name='teolhyn'
           />
           <ProjectGridCard
-            projectUrl='https://kumpisähkö.fi'
+            projectUrl='/kumpisahko'
             title='Electricity price calculator'
             description="Web app that calculates your electricity bill for both constant priced and spot priced electricity, based on consumption data from Fingrid Datahub. It also evaluates how well your electricity usage is optimized."
             technologies={['Next.js', 'ReactJS', 'PostgreSQL', 'Prisma', 'Neon']}
@@ -108,7 +113,7 @@ function Home() {
             user_name='teolhyn'
           />
           <ProjectGridCard
-            projectUrl='https://github.com/Teolhyn/homeassistant-custom-ui'
+            projectUrl='/homeassistantui'
             title='Custom Homeassistant UI'
             description="Still in very early stages. Custom UI for my own home automation. Connected to Home Assistant through websocket."
             technologies={['ReactJS', 'TypeScript', 'WebSocket']}
