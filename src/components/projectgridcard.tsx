@@ -22,7 +22,7 @@ const ProjectGridCard: React.FC<ProjectGridProps> = ({ projectUrl, repo_name, us
 
   useEffect(() => {
     if (repo_name && user_name) {
-      let projectUrl = `https://api.github.com/repos/${user_name}/${repo_name}`
+      const projectUrl = `https://api.github.com/repos/${user_name}/${repo_name}`
       fetch(projectUrl).then((res) => res.json()).then((json: GitHubRepo) => {
         SetCount(json.stargazers_count);
       })
