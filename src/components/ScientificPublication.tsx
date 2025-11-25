@@ -10,7 +10,7 @@ const ScientificPublication: React.FC<ScientificPublicationProps> = ({ url: proj
   return (
     <div>
       {projectUrl ? (
-        <a href={projectUrl} className="font-light inline-flex items-center mb-1 relative group hover:opacity-90 border-l-2 border-white pl-2" target="_blank" rel="noopener noreferrer">
+        <a href={projectUrl} className="font-light inline-flex items-center mb-1 relative group hover:opacity-90 border-l-2 border-black dark:border-white pl-2" target="_blank" rel="noopener noreferrer">
           <span className="relative group">
             {title}
             <FontAwesomeIcon icon={faUpRightFromSquare} size="xs" className="mx-2" />

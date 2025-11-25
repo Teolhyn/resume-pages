@@ -11,7 +11,7 @@ interface ProjectPageProps {
 
 const ProjectPage: React.FC<ProjectPageProps> = ({ title, repo_url, website_url, header_img, children }) => {
   return (
-    <div className='mx-3 md:mx-auto py-5 max-w-xl'>
+    <div className='mx-3 md:mx-auto py-5 max-w-xl text-black dark:text-white'>
       <h1 className='text-3xl mb-1'>{title}</h1>
       <div className='flex gap-5 mb-4'>
         {repo_url && (
