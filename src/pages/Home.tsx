@@ -75,7 +75,7 @@ function Home() {
       <div className='mb-8'>
         <h1 className='text-2xl font-bold mb-2'>About Me</h1>
         <p className='font-light mb-2'>Ever since I was 14 (which was 14 years ago) and my dad bought me an Arduino, showed me a program that made the on-board LED blink, and explained the code to me line by line, I have been hooked to programming. What started from Arduino, quickly transitioned to small games. Games changed to a more academic use, from creating phase-field model in my bachelors thesis to modelling spiking neural networks based on physical memristors for my masters (See Scientific Publications 😉). While in university I also got interested in web development, which then evolved to web3 development due to my interest in all things blockchain. I am still a generalist by heart, but lately I have mainly worked on full-stack applications in both web2 and web3 worlds.</p>
-        <p className='font-light'>While tinkering with computers is a passionate hobby of mine, there are other things in my life. I am a father of a beautiful little girl (and a cat!), and a husband of a lovely wife. On my free time I love to do anything outdoors, especially hiking and foraging. During summer days I really like to spend my days at sea.</p>
+        <p className='font-light'>While tinkering with computers is a passionate hobby of mine, there are also other things in my life. I am a father of a beautiful little girl (and a cat), and a husband to a lovely wife. On my free time I love to do anything outdoors, especially hiking and foraging. During summer days I really like to spend my days at the sea.</p>
       </div>
       <div className='mb-8'>
         <h1 className='text-2xl font-bold mb-2'>Work and Projects</h1>
