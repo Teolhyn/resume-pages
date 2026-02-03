@@ -32,7 +32,7 @@ const ProjectGridCard: React.FC<ProjectGridProps> = ({ projectUrl, repo_name, us
   return (
     <div>
       {projectUrl ? (
-        <Link to={projectUrl} className="text-lg inline-flex items-center mb-1 relative group" rel="noopener noreferrer">
+        <Link to={projectUrl} className="text-lg inline-flex items-center mb-1 relative group" target="_blank" rel="noopener noreferrer">
           <span className="relative group">
             {title}
             <span className="absolute bottom-0 left-0 w-0 h-[2px] rounded-sm bg-black dark:bg-white transition-all duration-300 group-hover:w-full"></span>
@@ -50,7 +50,7 @@ const ProjectGridCard: React.FC<ProjectGridProps> = ({ projectUrl, repo_name, us
           ))}
         </div>
       ) : (
-        <div className="flex gap-2 ">
+        <div className="flex gap-2 flex-wrap">
           {technologies.map((tech) => (
             <div key={tech} className="bg-gray-300 px-2 rounded-sm text-sm text-gray-600">{tech}</div>
           ))}

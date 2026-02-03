@@ -89,6 +89,12 @@ function Home() {
             user_name='laina-defi'
           />
           <ProjectGridCard
+            projectUrl='https://backtester.fi'
+            title='Backtester'
+            description="A no-code trading strategy backtesting platform. Backtester not only backtests, but runs multiple statistical tests to find e.g. overfitting, confirmation bias and/or selection bias. Back end built with Rust and front end is static Astro."
+            technologies={['Rust', 'Astro', 'PostgreSQL', 'AWS EC2', 'AWS S3', 'AWS RDS', 'AWS CloudFront', 'Stripe']}
+          />
+          <ProjectGridCard
             projectUrl='/nolosslottery'
             title='No Loss Lottery'
             description="No Loss Lottery built on Stellar on top of Blend DeFi protocol. This project was built for a Dorahacks hackathon and it achieved 2nd place from almost 300 builders. The hackathon required the project to be built on top of the Stellar Scaffold framework. Contracts are written in rust and frontend is built with React and TypeScript. Wallet connections are handled with Stellar Wallets Kit, which was also a requirement of the hackathon."
@@ -119,6 +125,19 @@ function Home() {
             technologies={['ReactJS', 'TypeScript', 'WebSocket']}
             repo_name='homeassistant-custom-ui'
             user_name='teolhyn'
+          />
+        </div>
+      </div>
+      <div className='mb-8'>
+        <h1 className='text-2xl font-bold mb-2'>Opensource Contributions</h1>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+          <ProjectGridCard
+            projectUrl='https://github.com/pest-parser/pest/pull/1151'
+            title='Pest'
+            description="Pest is a parser written in Rust that uses parsing expression grammars rather than the usual regular expressions. I fixed a bug where certain struct was giving different output for Struct.as_str().to_string() and Struct.to_string() by fixing their fmt::Display implementation."
+            technologies={['Rust']}
+            repo_name='pest'
+            user_name='pest-parser'
           />
         </div>
       </div>
